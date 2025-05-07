@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://cdn.tailwindcss.com">
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - Kyle Hentai Games</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          height: {
+            'hero-mobile': '15rem',
+            'hero-desktop': '25rem',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="flex items-center justify-between p-4 bg-gray-800 sticky top-0 z-10">
+    <div class="flex items-center space-x-2">
+      <img src="/assets/logos/logo.gif" alt="Logo" class="h-8 w-8 rounded-lg">
+      <span class="text-xl font-bold"></span>
+    </div>
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center space-x-6">
+      <a href="index.html" class="hover:text-yellow-400 transition duration-200">Home</a>
+      <a href="#" class="hover:text-yellow-400 transition duration-200">Games</a>
+      <a href="categories.html" class="hover:text-yellow-400 transition duration-200 text-yellow-400">Categories</a>
+      <a href="#" class="hover:text-yellow-400 transition duration-200">News</a>
+    </nav>
+    
+    <div class="hidden md:flex space-x-2">
+      <a href="auth/register.html" class="bg-yellow-400 hover:bg-yellow-500 text-black px-3 py-2 rounded text-sm md:px-4 md:py-2 md:text-base transition duration-200">Sign Up</a>
+      <a href="auth/login.html" class="bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-sm md:px-4 md:py-2 md:text-base transition duration-200">Login</a>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation (hidden by default) -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-4 px-4">
+    <nav class="flex flex-col space-y-3">
+      <a href="index.html" class="block py-2 hover:text-yellow-400 transition duration-200 border-b border-gray-700">Home</a>
+      <a href="#" class="block py-2 hover:text-yellow-400 transition duration-200 border-b border-gray-700">Games</a>
+      <a href="categories.html" class="block py-2 hover:text-yellow-400 transition duration-200 border-b border-gray-700 text-yellow-400">Categories</a>
+      <a href="#" class="block py-2 hover:text-yellow-400 transition duration-200 border-b border-gray-700">News</a>
+      <div class="flex flex-col space-y-2 pt-2">
+        <a href="auth/signup.html" class="bg-yellow-400 hover:bg-yellow-500 text-black px-3 py-2 rounded text-center transition duration-200">Sign Up</a>
+        <a href="auth/login.html" class="bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-center transition duration-200">Login</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative">
+    <img src="/assets/images/categories-banner.jpg" alt="Categories Banner" class="w-full h-hero-mobile md:h-hero-desktop object-cover">
+    <div class="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-center px-4">
+      <h1 class="text-2xl md:text-5xl font-bold mb-4 max-w-3xl leading-tight">Explore Game Categories</h1>
+      <p class="text-lg md:text-xl mb-6 max-w-2xl">Find your favorite type of hentai games from our extensive collection</p>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="p-4 md:p-8 max-w-6xl mx-auto">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
+      <!-- Category Cards -->
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-adventure.jpg" alt="Adventure" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Adventure</h3>
+          <p class="text-sm text-gray-400">125 games</p>
+        </div>
+      </a>
+
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-rpg.jpg" alt="RPG" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">RPG</h3>
+          <p class="text-sm text-gray-400">98 games</p>
+        </div>
+      </a>
+
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-simulation.jpg" alt="Simulation" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Simulation</h3>
+          <p class="text-sm text-gray-400">76 games</p>
+        </div>
+      </a>
+
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-dating.jpg" alt="Dating Sim" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Dating Sim</h3>
+          <p class="text-sm text-gray-400">112 games</p>
+        </div>
+      </a>
+
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-visual-novel.jpg" alt="Visual Novel" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Visual Novel</h3>
+          <p class="text-sm text-gray-400">89 games</p>
+        </div>
+      </a>
+
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-strategy.jpg" alt="Strategy" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Strategy</h3>
+          <p class="text-sm text-gray-400">64 games</p>
+        </div>
+      </a>
+
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-puzzle.jpg" alt="Puzzle" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Puzzle</h3>
+          <p class="text-sm text-gray-400">42 games</p>
+        </div>
+      </a>
+
+      <a href="#" class="bg-gray-800 rounded-lg overflow-hidden hover:transform hover:scale-105 transition duration-300 shadow-md group">
+        <div class="relative h-40 md:h-48">
+          <img src="/assets/images/category-action.jpg" alt="Action" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition duration-300"></div>
+        </div>
+        <div class="p-4">
+          <h3 class="text-lg font-semibold">Action</h3>
+          <p class="text-sm text-gray-400">57 games</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-6 bg-gray-800 text-center text-xs md:text-sm text-gray-400">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://www.facebook.com/Randy.kyle09" class="hover:opacity-80 transition duration-200">
+        <img src="/assets/icons/facebook.png" alt="Facebook" class="w-6 h-6 rounded-full object-cover">
+      </a>
+      <a href="#" class="hover:opacity-80 transition duration-200">
+        <img src="/assets/icons/youtube.png" alt="YouTube" class="w-6 h-6 rounded-full object-cover">
+      </a>
+      <a href="#" class="hover:opacity-80 transition duration-200">
+                <img src="/assets/icons/instagram.png" alt="Instagram" class="w-6 h-6 rounded-full object-cover">
+      </a>
+    </div>
+    <p>&copy; 2025 Kyle. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      // Toggle mobile menu
+      mobileMenuButton.addEventListener('click', function(e) {
+        e.stopPropagation(); // Prevent event from bubbling up
+        mobileMenu.classList.toggle('hidden');
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!mobileMenu.contains(e.target) && e.target !== mobileMenuButton) {
+          mobileMenu.classList.add('hidden');
+        }
+      });
+      
+      // Close menu when clicking on a link
+      const mobileLinks = mobileMenu.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
